@@ -1,15 +1,19 @@
-resolver: lts-6.20
-compiler: ghcjs-0.2.0.9006020_ghc-7.10.3
+resolver: nightly-2018-05-13
+compiler: ghcjs-0.2.0.9011009_ghc-8.4.1
 compiler-check: match-exact
 
 packages:
  - '.'
 extra-deps:
- - miso-0.18.0.0
+- miso-0.18.0.0
+- git: https://github.com/ghcjs/ghcjs-base.git
+  commit: 92bfcf42ffddb9676c4e288efd5750a06c4f4799
 
 setup-info:
   ghcjs:
     source:
-      ghcjs-0.2.0.9006020_ghc-7.10.3:
-         url: http://ghcjs.tolysz.org/lts-6.20-9006020.tar.gz
-         sha1: a6cea90cd8121eee3afb201183c6e9bd6bacd94a
+      ghcjs-0.2.0.9011009_ghc-8.4.1:
+         url: /opt/ghcjs.tar.gz
+
+allow-newer: true
+
